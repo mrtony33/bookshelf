@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Buy and Sell</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://assets.blurb.com/pages/website-assets/photo-books/softcover-april-23-b15c399c30dc564efb8c9b70021bccc78463f61c1db5fd4b8fb757c975f54040.jpg"
+    />
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li id="logo">
+          <img src="./images/heading.jpg" alt="" width="50px" />
+        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#search">Search</a></li>
+        <li><a href="#best">Bestsellers</a></li>
+        <li><a href="#header-contact">Contact</a></li>
+      </ul>
+    </header>
+    <session>
+      <div class="image-container">
+        <img
+          src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+          alt="Your Image"
+        />
+        <div class="text-overlay">
+          <h1>Tony's Book Gallery</h1>
+          <p>Discover the World, One Book at a Time</p>
+        </div>
+      </div>
+
+      <div id="search" class="article">
+        <h1>Book Search</h1>
+        <form action="search.php" method="get">
+          <label for="searchQuery">Search for a book:</label>
+          <input
+            type="text"
+            id="searchQuery"
+            name="query"
+            placeholder="Enter book title or author"
+            required
+          />
+          <input type="submit" value="Search" />
+        </form>
+        <h2 id="best">Best Sellers</h2>
+        <div class="row r1">
+          <div class="col c1">
+            <img
+              src="https://m.media-amazon.com/images/I/5165He67NEL.jpg"
+              width="200px"
+              height="230px"
+            /><br />
+            <a
+              href="https://www.amazon.in/Harry-Potter-Philosophers-Stone-Rowling-ebook/dp/B019PIOJYU?ref_=Oct_d_obs_d_1402038031_0&pd_rd_w=0ZTy7&content-id=amzn1.sym.6c2129e0-dd81-4530-ab42-0f0d524cd085&pf_rd_p=6c2129e0-dd81-4530-ab42-0f0d524cd085&pf_rd_r=45441D0XBM0H7J2N1SD3&pd_rd_wg=TFRSk&pd_rd_r=ca2b5301-6d56-4b93-8745-1d6269edc376&pd_rd_i=B019PIOJYU"
+            >
+              Harry Potter and the Philosopher's Stone</a
+            >
+            <div class="buy b1"><button type="button">Buy</button></div>
+          </div>
+          <div class="col c1">
+            <img
+              src="https://m.media-amazon.com/images/I/6195CYgDcHL._SX460_BO1,204,203,200_.jpg"
+              width="200px"
+              height="230px"
+            /><br />
+            <a
+              href="https://www.amazon.in/Canterville-Ghost-Oscar-Wilde/dp/9354401538/ref=zg_bs_g_1318165031_sccl_2/257-3887189-9327020?psc=1"
+              >The Canterville Ghost</a
+            >
+            <div class="buy b2"><button type="button">Buy</button></div>
+          </div>
+          <div class="col c1">
+            <img
+              src="https://m.media-amazon.com/images/I/61DKHdZ+x1L._SX460_BO1,204,203,200_.jpg"
+              width="200px"
+              height="230px"
+            /><br />
+            <a
+              href="https://www.amazon.in/Ghosts-Silent-Hills-Stories-hauntings/dp/9389717132/ref=zg_bs_g_1318165031_sccl_3/257-3887189-9327020?psc=1"
+              >Ghosts of The Silent Hills: Stories based on true hauntings
+            </a>
+            <div class="buy b3"><button type="button">Buy</button></div>
+          </div>
+          <div class="col c1">
+            <img
+              src="https://m.media-amazon.com/images/I/51jc+MysKcL.jpg"
+              width="200px"
+              height="250px"
+            /><br />
+            <a
+              href="https://www.amazon.in/Haunting-Adeline-Mouse-Duet-Book/dp/B0BC9TJX75/ref=zg_bs_g_1318165031_sccl_6/257-3887189-9327020?isALC=true"
+              >Haunting Adeline: Cat and Mouse Duet, Book 1</a
+            >
+            <div class="buy b4"><button type="button">Buy</button></div>
+          </div>
+        </div>
+      </div>
+      <h1 id="header-contact">Contact Me</h1>
+      <div class="contact-form">
+        <form action="contact.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <input type="submit" value="Send" />
+        </form>
+      </div>
+      <footer>
+        <p>&copy; 2023 Your Website Name</p>
+      </footer>
+    </session>
+  </body>
+</html>
